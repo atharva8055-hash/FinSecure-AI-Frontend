@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinSecure AI | AI-Powered Payment Protection</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     LANDING PAGE
+===================================================== -->
+
+<div id="landingPage" class="page active">
+
+    <nav class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">FS</div>
+
+            <div>
+                <h2>FinSecure AI</h2>
+                <span>AI-Powered Payment Protection</span>
+            </div>
+
+        </div>
+
+        <div class="nav-buttons">
+
+            <button class="btn btn-outline" id="showLogin">
+                Login
+            </button>
+
+            <button class="btn btn-primary" id="showRegister">
+                Create Account
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="security-badge">
+                <span>●</span>
+                AI-POWERED PAYMENT SECURITY
+            </div>
+
+            <h1>
+                Protect every payment.
+                <span>Detect every threat.</span>
+            </h1>
+
+            <p>
+                FinSecure AI intelligently analyzes digital payment
+                activity to identify suspicious UPI transactions and
+                potential QR-based payment scams before they become
+                a financial threat.
+            </p>
+
+
+            <div class="features">
+
+                <div class="feature">
+                    <span>✓</span>
+                    AI-powered fraud detection
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    Real-time transaction risk analysis
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    Secure JWT authentication
+                </div>
+
+            </div>
+
+
+            <div class="hero-buttons">
+
+                <button
+                        class="btn btn-primary large"
+                        id="heroRegister">
+
+                    Get Started →
+
+                </button>
+
+                <button
+                        class="btn btn-outline large"
+                        id="heroLogin">
+
+                    Login to Dashboard
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SECURITY PREVIEW -->
+
+        <div class="hero-card">
+
+            <div class="card-header">
+
+                <div class="status-dot"></div>
+
+                <span>FinSecure AI</span>
+
+                <small>LIVE PROTECTION</small>
+
+            </div>
+
+
+            <div class="security-score">
+
+                <div class="score-circle">
+
+                    <strong>94.8</strong>
+
+                    <span>Security Score</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="mini-alert safe">
+
+                <span>✓</span>
+
+                <div>
+                    <strong>Transaction Monitoring</strong>
+                    <small>Active and protecting payments</small>
+                </div>
+
+            </div>
+
+
+            <div class="mini-alert warning">
+
+                <span>!</span>
+
+                <div>
+                    <strong>AI Risk Analysis</strong>
+                    <small>Real-time threat assessment enabled</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- =====================================================
+     LOGIN PAGE
+===================================================== -->
+
+<div id="loginPage" class="page auth-page">
+
+    <div class="auth-container">
+
+        <div class="auth-brand">
+
+            <div class="brand-icon">FS</div>
+
+            <div>
+                <h2>FinSecure AI</h2>
+                <span>AI-Powered Payment Protection</span>
+            </div>
+
+        </div>
+
+
+        <div class="auth-card">
+
+            <div class="auth-header">
+
+                <div class="auth-icon">
+                    🔐
+                </div>
+
+                <span class="auth-eyebrow">
+                    SECURE ACCESS
+                </span>
+
+                <h1>Welcome back</h1>
+
+                <p>
+                    Login to access your payment security dashboard.
+                </p>
+
+            </div>
+
+
+            <form id="loginForm">
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                                type="password"
+                                id="loginPassword"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                        >
+
+                        <button
+                                type="button"
+                                class="password-toggle"
+                                id="loginPasswordToggle">
+
+                            👁
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                        type="submit"
+                        class="btn btn-primary full-width"
+                        id="loginBtn">
+
+                    Login Securely →
+
+                </button>
+
+                <p
+                        id="loginMessage"
+                        class="form-message">
+                </p>
+
+            </form>
+
+
+            <div class="auth-footer">
+
+                <span>Don't have an account?</span>
+
+                <button
+                        type="button"
+                        class="link-button"
+                        id="loginToRegister">
+
+                    Create Account
+
+                </button>
+
+            </div>
+
+
+            <button
+                    type="button"
+                    class="back-button"
+                    id="loginBack">
+
+                ← Back to Home
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     REGISTER PAGE
+===================================================== -->
+
+<div id="registerPage" class="page auth-page">
+
+    <div class="auth-container">
+
+        <div class="auth-brand">
+
+            <div class="brand-icon">FS</div>
+
+            <div>
+                <h2>FinSecure AI</h2>
+                <span>AI-Powered Payment Protection</span>
+            </div>
+
+        </div>
+
+
+        <div class="auth-card">
+
+            <div class="auth-header">
+
+                <div class="auth-icon register-icon">
+                    🛡
+                </div>
+
+                <span class="auth-eyebrow">
+                    GET STARTED
+                </span>
+
+                <h1>Create your account</h1>
+
+                <p>
+                    Start protecting your digital payments with AI.
+                </p>
+
+            </div>
+
+
+            <form id="registerForm">
+
+                <div class="form-group">
+
+                    <label for="registerName">
+                        Full Name
+                    </label>
+
+                    <input
+                            type="text"
+                            id="registerName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="registerEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                            type="email"
+                            id="registerEmail"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                                type="password"
+                                id="registerPassword"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                        >
+
+                        <button
+                                type="button"
+                                class="password-toggle"
+                                id="registerPasswordToggle">
+
+                            👁
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            required
+                    >
+
+                </div>
+
+
+                <button
+                        type="submit"
+                        class="btn btn-primary full-width"
+                        id="registerBtn">
+
+                    Create Account →
+
+                </button>
+
+                <p
+                        id="registerMessage"
+                        class="form-message">
+                </p>
+
+            </form>
+
+
+            <div class="auth-footer">
+
+                <span>Already have an account?</span>
+
+                <button
+                        type="button"
+                        class="link-button"
+                        id="registerToLogin">
+
+                    Login
+
+                </button>
+
+            </div>
+
+
+            <button
+                    type="button"
+                    class="back-button"
+                    id="registerBack">
+
+                ← Back to Home
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     DASHBOARD
+===================================================== -->
+
+<div id="dashboardPage" class="page dashboard-page">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="brand-icon">
+                FS
+            </div>
+
+            <div>
+                <strong>FinSecure AI</strong>
+                <small>AI-Powered Payment Protection</small>
+            </div>
+
+        </div>
+
+
+        <!-- OVERVIEW -->
+
+        <div class="sidebar-section">
+
+            <span class="sidebar-title">
+                OVERVIEW
+            </span>
+
+            <button
+                    class="sidebar-item active"
+                    data-service="dashboard">
+
+                <span class="sidebar-item-icon">⌂</span>
+                Dashboard
+
+            </button>
+
+        </div>
+
+
+        <!-- PAYMENT SECURITY -->
+
+        <div class="sidebar-section">
+
+            <span class="sidebar-title">
+                PAYMENT SECURITY
+            </span>
+
+            <button
+                    class="sidebar-item"
+                    data-service="upi">
+
+                <span class="sidebar-item-icon">↯</span>
+                UPI Fraud Detection
+
+            </button>
+
+
+            <button
+                    class="sidebar-item"
+                    data-service="qr">
+
+                <span class="sidebar-item-icon">▦</span>
+                QR Scam Detection
+
+            </button>
+
+        </div>
+
+
+        <!-- INSIGHTS -->
+
+        <div class="sidebar-section">
+
+            <span class="sidebar-title">
+                INSIGHTS
+            </span>
+
+            <button
+                    class="sidebar-item"
+                    data-service="analytics">
+
+                <span class="sidebar-item-icon">▥</span>
+                Security Analytics
+
+            </button>
+
+
+            <button
+                    class="sidebar-item"
+                    data-service="alerts">
+
+                <span class="sidebar-item-icon">◉</span>
+                Security Alerts
+
+            </button>
+
+        </div>
+
+
+        <!-- USER -->
+
+        <div class="sidebar-bottom">
+
+            <div class="user-mini">
+
+                <div class="user-avatar">
+
+                    <span id="userInitial">
+                        U
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong id="sidebarUserName">
+                        User
+                    </strong>
+
+                    <small id="sidebarUserEmail">
+                        user@email.com
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <button
+                    class="logout-button"
+                    id="logoutBtn">
+
+                <span>↪</span>
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN DASHBOARD -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =================================================
+             DASHBOARD HOME
+        ================================================= -->
+
+        <section
+                id="dashboardSection"
+                class="dashboard-section active">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        REAL-TIME SECURITY
+                    </span>
+
+                    <h1>
+                        Payment Security Center
+                    </h1>
+
+                    <p>
+                        Monitor and analyze your digital payment
+                        activity with FinSecure AI.
+                    </p>
+
+                </div>
+
+
+                <div class="live-status">
+
+                    <span></span>
+
+                    All Systems Operational
+
+                </div>
+
+            </div>
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome-card">
+
+                <div class="welcome-content">
+
+                    <span class="eyebrow">
+                        WELCOME TO FINSECURE AI
+                    </span>
+
+                    <h2>
+                        Protect every payment. Detect every threat.
+                    </h2>
+
+                    <p>
+                        Choose a security service below to begin
+                        AI-powered payment analysis.
+                    </p>
+
+                </div>
+
+
+                <div class="welcome-decoration">
+
+                    <div class="decoration-circle"></div>
+
+                    <div class="decoration-line"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE CARDS -->
+
+            <div class="service-grid">
+
+
+                <!-- UPI -->
+
+                <div
+                        class="service-card"
+                        data-service-card="upi">
+
+                    <div class="service-card-top">
+
+                        <div class="service-icon upi-icon">
+                            ↯
+                        </div>
+
+                        <span class="service-status">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+
+                    <span class="service-tag">
+                        MODULE 01
+                    </span>
+
+                    <h2>
+                        UPI Fraud Detection
+                    </h2>
+
+                    <p>
+                        Analyze UPI transactions using AI-powered
+                        fraud detection, probability analysis and
+                        risk scoring.
+                    </p>
+
+
+                    <div class="service-features">
+
+                        <span>
+                            <b>✓</b>
+                            Transaction Analysis
+                        </span>
+
+                        <span>
+                            <b>✓</b>
+                            Fraud Probability
+                        </span>
+
+                        <span>
+                            <b>✓</b>
+                            Risk Score
+                        </span>
+
+                    </div>
+
+
+                    <button class="service-button">
+                        Analyze UPI Transaction
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <!-- QR -->
+
+                <div
+                        class="service-card"
+                        data-service-card="qr">
+
+                    <div class="service-card-top">
+
+                        <div class="service-icon qr-icon">
+                            ▦
+                        </div>
+
+                        <span class="service-status coming-soon">
+                            COMING SOON
+                        </span>
+
+                    </div>
+
+
+                    <span class="service-tag">
+                        MODULE 02
+                    </span>
+
+                    <h2>
+                        QR Scam Detection
+                    </h2>
+
+                    <p>
+                        Scan and analyze QR codes to identify
+                        potentially malicious payment links
+                        and scams.
+                    </p>
+
+
+                    <div class="service-features">
+
+                        <span>
+                            <b>✓</b>
+                            QR Image Analysis
+                        </span>
+
+                        <span>
+                            <b>✓</b>
+                            Scam Detection
+                        </span>
+
+                        <span>
+                            <b>✓</b>
+                            Security Result
+                        </span>
+
+                    </div>
+
+
+                    <button class="service-button">
+                        Scan QR Code
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             UPI DETECTION
+        ================================================= -->
+
+        <section
+                id="upiSection"
+                class="dashboard-section">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        MODULE 01
+                    </span>
+
+                    <h1>
+                        UPI Fraud Detection
+                    </h1>
+
+                    <p>
+                        Enter transaction details to calculate
+                        the AI-powered fraud risk.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="analysis-layout">
+
+
+                <!-- INPUT CARD -->
+
+                <div class="analysis-card">
+
+                    <div class="card-title">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                TRANSACTION ANALYSIS
+                            </span>
+
+                            <h2>
+                                Transaction Details
+                            </h2>
+
+                            <p>
+                                Provide the transaction information
+                                for AI analysis.
+                            </p>
+
+                        </div>
+
+
+                        <span class="secure-label">
+                            🔒 SECURE
+                        </span>
+
+                    </div>
+
+
+                    <form id="upiForm">
+
+
+                        <!-- BASIC DETAILS -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="amount">
+                                    Transaction Amount (₹)
+                                </label>
+
+                                <input
+                                        type="number"
+                                        id="amount"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="e.g. 2500"
+                                        required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="transactionType">
+                                    Transaction Type
+                                </label>
+
+                                <select
+                                        id="transactionType"
+                                        required>
+
+                                    <option value="">
+                                        Select transaction type
+                                    </option>
+
+                                    <option value="PAYMENT">
+                                        PAYMENT
+                                    </option>
+
+                                    <option value="TRANSFER">
+                                        TRANSFER
+                                    </option>
+
+                                    <option value="CASH_OUT">
+                                        CASH OUT
+                                    </option>
+
+                                    <option value="DEBIT">
+                                        DEBIT
+                                    </option>
+
+                                    <option value="CASH_IN">
+                                        CASH IN
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SENDER -->
+
+                        <h3 class="form-section-title">
+
+                            <span>01</span>
+                            Sender Account
+
+                        </h3>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="oldbalanceOrg">
+                                    Previous Balance
+                                </label>
+
+                                <input
+                                        type="number"
+                                        id="oldbalanceOrg"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="Previous balance"
+                                        required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="newbalanceOrig">
+                                    Balance After Transaction
+                                </label>
+
+                                <input
+                                        type="number"
+                                        id="newbalanceOrig"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="New balance"
+                                        required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- RECEIVER -->
+
+                        <h3 class="form-section-title">
+
+                            <span>02</span>
+                            Receiver Account
+
+                        </h3>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="oldbalanceDest">
+                                    Previous Balance
+                                </label>
+
+                                <input
+                                        type="number"
+                                        id="oldbalanceDest"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="Previous balance"
+                                        required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="newbalanceDest">
+                                    Balance After Transaction
+                                </label>
+
+                                <input
+                                        type="number"
+                                        id="newbalanceDest"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="New balance"
+                                        required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                                type="submit"
+                                class="btn btn-primary analyze-button"
+                                id="upiAnalyzeBtn">
+
+                            <span>⌕</span>
+                            Analyze Transaction
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- RESULT CARD -->
+
+                <div
+                        class="result-card"
+                        id="upiResult">
+
+                    <div class="result-placeholder">
+
+                        <div class="result-icon">
+                            🛡
+                        </div>
+
+                        <span class="result-eyebrow">
+                            AI FRAUD ANALYSIS
+                        </span>
+
+                        <h2>
+                            Ready for Analysis
+                        </h2>
+
+                        <p>
+                            Enter transaction details and click
+                            "Analyze Transaction" to receive the
+                            AI-powered fraud assessment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QR DETECTION
+        ================================================= -->
+
+        <section
+                id="qrSection"
+                class="dashboard-section">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        MODULE 02
+                    </span>
+
+                    <h1>
+                        QR Scam Detection
+                    </h1>
+
+                    <p>
+                        Upload a QR code image for security analysis.
+                    </p>
+
+                </div>
+
+                <div class="module-status">
+                    COMING SOON
+                </div>
+
+            </div>
+
+
+            <div class="qr-card">
+
+                <div
+                        class="qr-upload-area"
+                        id="qrUploadArea">
+
+                    <div class="qr-upload-icon">
+                        ▦
+                    </div>
+
+                    <span class="qr-upload-label">
+                        QR SECURITY SCANNER
+                    </span>
+
+                    <h2>
+                        Upload QR Code
+                    </h2>
+
+                    <p>
+                        Select a QR code image to analyze
+                        potentially malicious payment content.
+                    </p>
+
+
+                    <input
+                            type="file"
+                            id="qrFile"
+                            accept="image/*"
+                            hidden
+                    >
+
+
+                    <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="chooseQrBtn">
+
+                        Choose QR Image
+
+                    </button>
+
+
+                    <div id="qrFileName"></div>
+
+                </div>
+
+
+                <div
+                        class="qr-preview"
+                        id="qrPreview">
+
+                    <img
+                            id="qrImagePreview"
+                            alt="QR Preview">
+
+                </div>
+
+
+                <div
+                        id="qrResult"
+                        class="qr-result">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ANALYTICS
+        ================================================= -->
+
+        <section
+                id="analyticsSection"
+                class="dashboard-section">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        SECURITY ANALYTICS
+                    </span>
+
+                    <h1>
+                        Security Analytics
+                    </h1>
+
+                    <p>
+                        Overview of your transaction security activity.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ↗
+                    </div>
+
+                    <span>
+                        Transactions Analyzed
+                    </span>
+
+                    <strong id="transactionsAnalyzed">
+                        0
+                    </strong>
+
+                    <small>
+                        Total analyzed
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon danger">
+                        !
+                    </div>
+
+                    <span>
+                        Fraud Detected
+                    </span>
+
+                    <strong id="fraudDetected">
+                        0
+                    </strong>
+
+                    <small>
+                        Suspicious transactions
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon safe">
+                        ✓
+                    </div>
+
+                    <span>
+                        Safe Transactions
+                    </span>
+
+                    <strong id="safeTransactions">
+                        0
+                    </strong>
+
+                    <small>
+                        Low-risk activity
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon score">
+                        ◈
+                    </div>
+
+                    <span>
+                        Security Score
+                    </span>
+
+                    <strong>
+                        94.8
+                    </strong>
+
+                    <small>
+                        Current protection level
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ALERTS
+        ================================================= -->
+
+        <section
+                id="alertsSection"
+                class="dashboard-section">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        SECURITY ALERTS
+                    </span>
+
+                    <h1>
+                        Security Alerts
+                    </h1>
+
+                    <p>
+                        Important security events and system activity.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="alerts-card">
+
+
+                <div class="alerts-header">
+
+                    <div>
+
+                        <span class="card-eyebrow">
+                            SECURITY MONITOR
+                        </span>
+
+                        <h2>
+                            Recent Activity
+                        </h2>
+
+                    </div>
+
+                    <span class="alerts-status">
+                        MONITORING ACTIVE
+                    </span>
+
+                </div>
+
+
+                <div class="alert-item">
+
+                    <div class="alert-status safe"></div>
+
+                    <div>
+
+                        <strong>
+                            AI Fraud Detection Active
+                        </strong>
+
+                        <p>
+                            FinSecure AI is ready to analyze
+                            suspicious payment transactions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="alert-item">
+
+                    <div class="alert-status safe"></div>
+
+                    <div>
+
+                        <strong>
+                            Authentication System Secure
+                        </strong>
+
+                        <p>
+                            JWT-based authentication is active
+                            for protected services.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="alert-item">
+
+                    <div class="alert-status warning"></div>
+
+                    <div>
+
+                        <strong>
+                            QR Detection Module
+                        </strong>
+
+                        <p>
+                            QR scam detection is currently
+                            being prepared for deployment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="./script.js"></script>
+
+</body>
+
+</html>
